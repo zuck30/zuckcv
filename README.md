@@ -176,9 +176,6 @@
   <p align="center">
     <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=Keep%20it%20simple%2C%20stupid!&author=KISS%20Principle" alt="KISS Quote">
   </p>
-  <p align="center">
-    This project proves you can build beautiful, modern SPAs with just HTML, CSS, and JavaScript. No build steps, no node_modules, no complexity.
-  </p>
 </details>
 
 <br>
