@@ -23,11 +23,6 @@
 
 ## ✨ Features
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js&perline=3" />
-</p>
-
-- 🥂 **Glassmorphism Design** - Frosted glass effects with backdrop blur and semi-transparent layers
 - 📱 **Fully Responsive** - Adapts seamlessly to mobile, tablet, and desktop screens
 - ⚡ **Single Page Application** - Smooth, app-like experience without page reloads
 - ✍️ **Clean Typography** - Professional font hierarchy matching original CV
