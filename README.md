@@ -3,10 +3,10 @@
   <img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=0:43cea2,100:185a9d&text=%20Zuck's%20CV&textBg=false&desc=(Interactive%20Resume%20SPA)&descAlign=79&fontAlign=50&descAlignY=70&fontColor=f7f5f5" alt="Banner">
 </p>
 
-<h1 align="center">My Professional CV - Single Page Application 📄</h1>
+<h1 align="center">My CV Single Page Application 📄</h1>
 
 <p align="center">
-  A modern, glassmorphism-styled <strong>Single Page Application</strong> showcasing my professional journey as a <strong>Fullstack Developer</strong> from <a href="https://www.google.com/travel/things-to-do?dest_src=ut&dest_mid=%2Fm%2F0htfv">Tanzania</a>, built with pure vanilla web technologies!
+  A modern, <strong>Single Page Application</strong> showcasing my professional journey as a <strong>Fullstack Developer</strong> from <a href="https://www.google.com/travel/things-to-do?dest_src=ut&dest_mid=%2Fm%2F0htfv">Tanzania</a>, built with pure vanilla web technologies!
 </p>
 
 <p align="center">
@@ -18,16 +18,6 @@
   <a href="https://github.com/zuck30/zuckcv/network/members"><img src="https://img.shields.io/github/forks/zuck30/zuckcv.svg?color=blue&logo=github" alt="Forks"></a>
   <img src="https://visitor-badge.laobi.icu/badge?page_id=zuck30.zuckcv" alt="Visitors">
 </p>
-
-<br>
-
-<div align="center">
-  <img alt="Live Demo Preview" src="https://via.placeholder.com/800x400/1e1e1e/43cea2?text=Live+Demo+Preview" width="80%" style="border-radius:30px; border: 2px solid #39D353;" />
-  <br><br>
-  <a href="https://shedysilicon.netlify.app" target="_blank">
-    <img src="https://img.shields.io/badge/VIEW_LIVE_DEMO-43cea2?style=for-the-badge&logo=netlify&logoColor=black" alt="Live Demo">
-  </a>
-</div>
 
 <br>
 
