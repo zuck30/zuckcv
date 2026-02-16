@@ -195,13 +195,6 @@
   <a href="https://shedysilicon.netlify.app"><img src="https://img.shields.io/badge/Portfolio-30302f?style=flat-square&logo=firefox&logoColor=white" alt="Portfolio"></a>
 </p>
 
-<p align="center">
-  <b>Shadrack Timothy John</b><br>
-  📍 Dodoma, Tanzania
-</p>
-
-<br>
-
 ## ☕ Buy Me a Coffee
 
 <p align="center">
