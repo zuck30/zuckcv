@@ -48,19 +48,6 @@
 
 <br>
 
-## 📁 Project Structure
-
-```
-📦 zuckcv/
-├── 📄 index.html          # Main HTML file
-├── 🎨 styles.css          # All styling (Glassmorphism, responsive)
-├── ⚙️ app.js           # Vanilla JavaScript functionality
-├── 📄 README.md           # Project documentation
-└── 📄 LICENSE             # MIT License
-```
-
-<br>
-
 ## 🔧 Installation & Setup
 
 <details open>
