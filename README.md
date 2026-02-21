@@ -135,7 +135,7 @@
   <summary><strong>Deploy to Netlify (Recommended)</strong></summary>
   <br>
   <ol>
-    <li>Push code to GitHub repository</li>
+    <li>Push code to Github</li>
     <li>Log in to <a href="https://app.netlify.com">Netlify</a></li>
     <li>Click "New site from Git"</li>
     <li>Select repository</li>
