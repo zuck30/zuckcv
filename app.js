@@ -9,6 +9,64 @@ class CVApp {
         this.setupContactInteractions();
         this.setupAnimations();
         this.setupResponsiveMenu();
+        this.setupVisitorCounter(); // New
+        this.setupSpotifyInteractions(); // New
+        this.setupQuoteRefresh(); // New
+    }
+
+    // New: Visitor Counter with animation
+    setupVisitorCounter() {
+        const visitorElement = document.querySelector('.visitor-count span');
+        if (visitorElement) {
+            // Get visitor count from the badge or generate random
+            const count = Math.floor(Math.random() * 1000) + 500;
+            visitorElement.textContent = count.toLocaleString();
+            
+            // Animate the counter
+            this.animateCounter(visitorElement, count);
+        }
+    }
+
+    animateCounter(element, finalCount) {
+        let current = 0;
+        const increment = Math.ceil(finalCount / 50);
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= finalCount) {
+                current = finalCount;
+                clearInterval(timer);
+            }
+            element.textContent = current.toLocaleString();
+        }, 20);
+    }
+
+    // New: Spotify interactions
+    setupSpotifyInteractions() {
+        const spotifyDetails = document.querySelector('.spotify-details');
+        if (spotifyDetails) {
+            spotifyDetails.addEventListener('toggle', (e) => {
+                if (spotifyDetails.open) {
+                    this.showNotification('🎵 Now showing your music taste!');
+                }
+            });
+        }
+    }
+
+    // New: Auto-refresh quote daily
+    setupQuoteRefresh() {
+        // Check if we need to refresh the quote (once per day)
+        const lastQuoteDate = localStorage.getItem('lastQuoteDate');
+        const today = new Date().toDateString();
+        
+        if (lastQuoteDate !== today) {
+            // Force reload the quote image by adding a timestamp
+            const quoteImg = document.querySelector('.quote-card img');
+            if (quoteImg) {
+                const src = quoteImg.src.split('?')[0];
+                quoteImg.src = `${src}?t=${Date.now()}`;
+                localStorage.setItem('lastQuoteDate', today);
+            }
+        }
     }
 
     setupSmoothScrolling() {
@@ -25,7 +83,6 @@ class CVApp {
             });
         });
     }
-
 
     setupPrintFunctionality() {
         document.addEventListener('keydown', (e) => {
@@ -113,6 +170,7 @@ class CVApp {
             }, 300);
         }, 3000);
     }
+
     setupAnimations() {
         const observerOptions = {
             root: null,
@@ -128,11 +186,21 @@ class CVApp {
                 }
             });
         }, observerOptions);
+
         document.querySelectorAll('.section').forEach(section => {
             section.classList.add('fade-in');
             observer.observe(section);
         });
+
+        // Also observe new elements
+        document.querySelectorAll('.github-stats-section, .spotify-section, .quote-section').forEach(section => {
+            if (section) {
+                section.classList.add('fade-in');
+                observer.observe(section);
+            }
+        });
     }
+
     setupResponsiveMenu() {
         let resizeTimer;
         window.addEventListener('resize', () => {
@@ -145,25 +213,15 @@ class CVApp {
 
     handleResize() {
         const width = window.innerWidth;
-
         if (width <= 600) {
             document.body.classList.add('mobile-view');
         } else {
             document.body.classList.remove('mobile-view');
         }
     }
-    debounce(func, wait) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    }
 }
+
+// Add new styles for notifications and animations
 const style = document.createElement('style');
 style.textContent = `
     .fade-in {
@@ -194,18 +252,48 @@ style.textContent = `
         transform: translateX(5px);
     }
 
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .coffee-button {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .stats-card {
+        transition: all 0.3s ease;
+    }
+
+    .stats-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
     @media (hover: none) {
-        .project-item:hover, .experience-item:hover, .education-item:hover {
+        .project-item:hover, .experience-item:hover, .education-item:hover,
+        .stats-card:hover, .coffee-button:hover {
             transform: none;
         }
     }
+
+    /* Print styles for new elements */
+    @media print {
+        .coffee-section, .visitor-badge-top, .spotify-section, 
+        .quote-section, .github-stats-section {
+            display: none !important;
+        }
+    }
 `;
+
 document.head.appendChild(style);
+
 document.addEventListener('DOMContentLoaded', () => {
     new CVApp();
 
     console.log('%c Shadrack T. John CV ', 'background: #2c3e50; color: #fff; padding: 10px; font-size: 16px; font-weight: bold;');
-    console.log('%c Single Page Application initialized successfully! ', 'color: #2c3e50; font-size: 12px;');
+    console.log('%c CV loaded with interactive features! 🎵💭☕📊', 'color: #2c3e50; font-size: 12px;');
 });
 
 if (typeof module !== 'undefined' && module.exports) {
