@@ -5,19 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cv of Shadrack T. John, a Computer Engineering student and Full-Stack Developer specializing in scalable system architectures, API integrations, and full-stack solutions with expertise in Python, FastAPI, React, and Machine Learning.">
     <meta name="author" content="Shadrack">
-    <meta property="og:title" content="Shadrack ">
+    <meta property="og:title" content="Shadrack T. John Full Stack Developer">
     <meta property="og:description" content="Crafting elegant, efficient, and user-centric software solutions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zuck30.github.io/zuckcv">
     <link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyofyNYiwBsJ7aX9NkStztx-xi-1tMAs8EAA&s">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <title>Shadrack T. John CV</title>
     <link rel="stylesheet" href="styles.css">
-<base target="_blank">
+    <base target="_blank">
 </head>
 <body>
-    <div class="cv-container">
 
+    <div id="particles-js"></div>
+    
+    <div class="floating-actions">
+        <a href="./cv/shadrack-cv.pdf" download class="float-btn download-btn" title="Download CV">
+            <i class="fa-solid fa-download"></i>
+            <span class="float-tooltip">Download CV</span>
+        </a>
+        <a href="mailto:mwalyangashadrack@gmail.com?subject=Job Opportunity" class="float-btn hire-btn" title="Hire Me">
+            <i class="fa-solid fa-briefcase"></i>
+            <span class="float-tooltip">Hire Me</span>
+        </a>
+    </div>
+
+    <div class="cv-container">
         <div class="visitor-badge-top">
             <img src="https://visitor-badge.laobi.icu/badge?page_id=zuck30.zuckcv" alt="Visitors">
         </div>
@@ -25,28 +39,35 @@
         <header class="header glass-header">
             <div class="header-content">
                 <div class="header-left">
+                    <div class="profile-container">
+                        <div class="profile-image-wrapper">
+                            <img src="./assets/profile.jpeg" alt="Shadrack T. John" class="profile-image" id="profileImage">
+                            <div class="profile-ring"></div>
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
                     <h1 class="name">Shadrack T. John</h1>
                     <p class="title">Computer Engineering Student & Full-Stack Developer</p>
                     <p class="tagline">Results-driven developer specializing in scalable system architectures, API integrations, and full-stack solutions with expertise in Python, FastAPI, React, and Machine Learning.</p>
                 </div>
                 <div class="header-right">
-                    <div class="contact-item glass-contact">
+                    <div class="contact-item glass-contact" data-tilt>
                         <i class="fa-solid fa-envelope icon"></i>
                         <a href="mailto:mwalyangashadrack@gmail.com">mwalyangashadrack@gmail.com</a>
                     </div>
-                    <div class="contact-item glass-contact">
+                    <div class="contact-item glass-contact" data-tilt>
                         <i class="fa-solid fa-phone icon"></i>
                         <span>+255774174921</span>
                     </div>
-                    <div class="contact-item glass-contact">
+                    <div class="contact-item glass-contact" data-tilt>
                         <i class="fa-brands fa-github icon"></i>
                         <a href="https://github.com/zuck30" target="_blank">github.com/zuck30</a>
                     </div>
-                    <div class="contact-item glass-contact">
+                    <div class="contact-item glass-contact" data-tilt>
                         <i class="fa-solid fa-globe icon"></i>
                         <a href="https://sheddysilicon.netlify.app" target="_blank">sheddysilicon.netlify.app</a>
                     </div>
-                    <div class="contact-item glass-contact">
+                    <div class="contact-item glass-contact" data-tilt>
                         <i class="fa-solid fa-location-dot icon"></i>
                         <span>Dodoma, Tanzania</span>
                     </div>
@@ -58,7 +79,7 @@
             <div class="left-column glass-card">
                 <section class="section">
                     <h2 class="section-title">EDUCATION</h2>
-                    <div class="education-item glass-item">
+                    <div class="education-item glass-item" data-tilt>
                         <div class="edu-header">
                             <h3>University of Dodoma</h3>
                             <span class="year">2022 - Present</span>
@@ -67,7 +88,7 @@
                         <p class="location">Dodoma, TZ College of Informatics</p>
                         <p class="details">Specializing in IT, Software Development, Machine Learning, System Engineering</p>
                     </div>
-                    <div class="education-item glass-item">
+                    <div class="education-item glass-item" data-tilt>
                         <div class="edu-header">
                             <h3>University of Dar es Salaam</h3>
                             <span class="year">2020 – 2022</span>
@@ -79,61 +100,95 @@
 
                 <section class="section">
                     <h2 class="section-title">TECHNICAL SKILLS</h2>
-                    <div class="skill-category glass-item">
-                        <h4>Programming Languages</h4>
-                        <p>Python • JavaScript • PHP •C++ • Golang</p>
+                    <div class="skill-category glass-item" data-tilt>
+                        <h4><i class="fa-solid fa-code"></i> Programming Languages</h4>
+                        <div class="skill-icons">
+                            <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="devicon-php-plain colored"></i> PHP</span>
+                            <span class="skill-tag"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                            <span class="skill-tag"><i class="devicon-go-original-wordmark colored"></i> Golang</span>
+                        </div>
                     </div>
-                    <div class="skill-category glass-item">
-                        <h4>Backend Development</h4>
-                        <p>FastAPI • REST APIs • MySQL • PostgreSQL • API Integration • Authentication</p>
+                    <div class="skill-category glass-item" data-tilt>
+                        <h4><i class="fa-solid fa-server"></i> Backend Development</h4>
+                        <div class="skill-icons">
+                            <span class="skill-tag"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                            <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+                            <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                            <span class="skill-tag"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                            <span class="skill-tag"><i class="fa-solid fa-plug"></i> API Integration</span>
+                            <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Authentication</span>
+                        </div>
                     </div>
-                    <div class="skill-category glass-item">
-                        <h4>Frontend Development</h4>
-                        <p>React 19 • Vite • Tailwind CSS • SCSS</p>
+                    <div class="skill-category glass-item" data-tilt>
+                        <h4><i class="fa-solid fa-laptop-code"></i> Frontend Development</h4>
+                        <div class="skill-icons">
+                            <span class="skill-tag"><i class="devicon-react-original colored"></i> React 19</span>
+                            <span class="skill-tag"><i class="devicon-vitejs-plain colored"></i> Vite</span>
+                            <span class="skill-tag"><i class="devicon-tailwindcss-original colored"></i> Tailwind CSS</span>
+                            <span class="skill-tag"><i class="devicon-sass-original colored"></i> SCSS</span>
+                        </div>
                     </div>
-                    <div class="skill-category glass-item">
-                        <h4>Data Science & ML</h4>
-                        <p>Pandas • NumPy • PyTorch • Scikit-learn • OpenCV • Model Deployment</p>
+                    <div class="skill-category glass-item" data-tilt>
+                        <h4><i class="fa-solid fa-brain"></i> Data Science & ML</h4>
+                        <div class="skill-icons">
+                            <span class="skill-tag"><i class="devicon-pandas-original colored"></i> Pandas</span>
+                            <span class="skill-tag"><i class="devicon-numpy-original colored"></i> NumPy</span>
+                            <span class="skill-tag"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                            <span class="skill-tag"><i class="fa-solid fa-robot"></i> Scikit-learn</span>
+                            <span class="skill-tag"><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+                            <span class="skill-tag"><i class="fa-solid fa-rocket"></i> Model Deployment</span>
+                        </div>
                     </div>
-                    <div class="skill-category glass-item">
-                        <h4>Tools & Platforms</h4>
-                        <p>•Arduino Git • Docker • Linux • Render • Netlify • Vercel • VS Code • Jupyter • Neovim</p>
+                    <div class="skill-category glass-item" data-tilt>
+                        <h4><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h4>
+                        <div class="skill-icons">
+                            <span class="skill-tag"><i class="devicon-arduino-plain colored"></i> Arduino</span>
+                            <span class="skill-tag"><i class="devicon-git-plain colored"></i> Git</span>
+                            <span class="skill-tag"><i class="devicon-docker-plain colored"></i> Docker</span>
+                            <span class="skill-tag"><i class="devicon-linux-plain colored"></i> Linux</span>
+                            <span class="skill-tag"><i class="fa-solid fa-cloud"></i> Render</span>
+                            <span class="skill-tag"><i class="devicon-netlify-plain colored"></i> Netlify</span>
+                            <span class="skill-tag"><i class="devicon-vercel-original colored"></i> Vercel</span>
+                            <span class="skill-tag"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                            <span class="skill-tag"><i class="devicon-jupyter-plain colored"></i> Jupyter</span>
+                            <span class="skill-tag"><i class="devicon-neovim-plain colored"></i> Neovim</span>
+                        </div>
                     </div>
                 </section>
 
                 <section class="section">
                     <h2 class="section-title">ACHIEVEMENTS</h2>
                     <ul class="achievement-list glass-list">
-                        <li>Deployed multiple Full-Stack and ML applications</li>
-                        <li>Open-source contributor on GitHub</li>
-                        <li>Technical mentor for junior developers</li>
+                        <li><i class="fa-solid fa-trophy"></i> Deployed multiple Full-Stack and ML applications</li>
+                        <li><i class="fa-solid fa-code-branch"></i> Open-source contributor on GitHub</li>
+                        <li><i class="fa-solid fa-chalkboard-user"></i> Technical mentor for junior developers</li>
                     </ul>
                 </section>
 
                 <section class="section">
                     <h2 class="section-title">ADDITIONAL INFORMATION</h2>
-                    <div class="additional-info glass-item">
-                        <p><strong>Languages:</strong> English (Fluent), Swahili (Native)</p>
-                        <p><strong>Interests:</strong> Open Source, Tech Communities, System Architecture</p>
-                        <p><strong>Availability:</strong> Open to Remote and Onsite opportunities</p>
+                    <div class="additional-info glass-item" data-tilt>
+                        <p><strong><i class="fa-solid fa-language"></i> Languages:</strong> English (Fluent), Swahili (Native)</p>
+                        <p><strong><i class="fa-solid fa-heart"></i> Interests:</strong> Open Source, Tech Communities, System Architecture</p>
+                        <p><strong><i class="fa-solid fa-briefcase"></i> Availability:</strong> Open to Remote and Onsite opportunities</p>
                     </div>
                 </section>
-
-              
             </div>
 
             <div class="right-column glass-card">
                 <section class="section">
                     <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
 
-                    <div class="experience-item glass-item">
+                    <div class="experience-item glass-item" data-tilt>
                         <div class="exp-header">
                             <h3>Azampay Tanzania</h3>
                             <span class="role">Technical Intern</span>
                         </div>
                         <div class="exp-meta">
-                            <span class="date">July 2024 – September 2024</span>
-                            <span class="location">Dar es Salaam, TZ</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> July 2024 – September 2024</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Dar es Salaam, TZ</span>
                         </div>
                         <ul class="exp-list">
                             <li>Integrated multiple payment gateways and third-party APIs into fintech platforms</li>
@@ -143,14 +198,14 @@
                         </ul>
                     </div>
 
-                    <div class="experience-item glass-item">
+                    <div class="experience-item glass-item" data-tilt>
                         <div class="exp-header">
                             <h3>Freelance Developer</h3>
                             <span class="role">Full-Stack Engineer</span>
                         </div>
                         <div class="exp-meta">
-                            <span class="date">2023 – Present</span>
-                            <span class="location">Remote</span>
+                            <span class="date"><i class="fa-regular fa-calendar"></i> 2023 – Present</span>
+                            <span class="location"><i class="fa-solid fa-globe"></i> Remote</span>
                         </div>
                         <ul class="exp-list">
                             <li>Developed custom Systems for local SMEs</li>
@@ -163,9 +218,9 @@
                 </section>
 
                 <section class="section">
-                    <h2 class="section-title">SOME FEW FEATURED PROJECTS</h2>
+                    <h2 class="section-title">FEATURED PROJECTS</h2>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>Sekela: University Finder Platform</h3>
                             <span class="tech">React, FastAPI, Machine Learning</span>
@@ -175,10 +230,15 @@
                             <li>ML-based recommendation system for course matching</li>
                             <li>Interactive data visualizations with ECharts</li>
                             <li>Reduced university research time for students</li>
+                              <li class="project-links">
+                                <a href="https://github.com/zuck30/sekelafinder" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>AfyaChecker: ML Health Assistant</h3>
                             <span class="tech">Python, FastAPI, Groq API, React</span>
@@ -187,10 +247,15 @@
                             <li>Multilingual symptom checker (Swahili/English) with ML analysis</li>
                             <li>Integrated Groq API for real-time medical information</li>
                             <li>Designed intuitive dashboard for symptom tracking</li>
+                             <li class="project-links">
+                                <a href="https://github.com/zuck30/AfyaChecker" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>CiveGPT: UDOM AI Chat Assistant</h3>
                             <span class="tech">React, Groq API, FastApi</span>
@@ -199,11 +264,18 @@
                             <li>ML-powered chat application with Groq API integration</li>
                             <li>Real-time response generation with FastAPI backend</li>
                             <li>Modern React frontend with responsive design</li>
-                            <li><a href="https://civegpt.netlify.app" target="_blank">Live Demo</a> • <a href="https://github.com/zuck30/cive-gpt" target="_blank">GitHub</a></li>
+                            <li class="project-links">
+                                <a href="https://civegpt.netlify.app" target="_blank" class="link-btn live-demo">
+                                    <i class="fa-solid fa-rocket"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/zuck30/cive-gpt" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>Loan Eligibility Prediction</h3>
                             <span class="tech">React, Python, FastAPI, Scikit-learn</span>
@@ -212,11 +284,15 @@
                             <li>ML-powered loan eligibility prediction system</li>
                             <li>Scikit-learn model for accurate predictions</li>
                             <li>FastAPI backend with React frontend</li>
-                            <li><a href="https://github.com/zuck30/loan-eligibility" target="_blank">GitHub Repository</a></li>
+                            <li class="project-links">
+                                <a href="https://github.com/zuck30/loan-eligibility" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>NNStudio: 3D Neural Network Visualizer</h3>
                             <span class="tech">TensorFlow.js, Three.js, React</span>
@@ -225,11 +301,15 @@
                             <li>Interactive 3D neural network visualization with Three.js</li>
                             <li>Real-time AI training visualization</li>
                             <li>Supports interactive learning for students and developers</li>
-                            <li><a href="https://github.com/zuck30/NNStudio" target="_blank">GitHub Repository</a></li>
+                            <li class="project-links">
+                                <a href="https://github.com/zuck30/NNStudio" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>WhatsQr: WhatsApp QR Generator</h3>
                             <span class="tech">Python, SPA</span>
@@ -238,11 +318,18 @@
                             <li>Creates QR codes that redirect to WhatsApp chats</li>
                             <li>Optimized for mobile devices</li>
                             <li>Easy sharing and scanning of QR codes</li>
-                            <li><a href="https://whatsqr.netlify.app" target="_blank">Live Demo</a> • <a href="https://github.com/zuck30/whatsQr" target="_blank">GitHub</a></li>
+                            <li class="project-links">
+                                <a href="https://whatsqr.netlify.app" target="_blank" class="link-btn live-demo">
+                                    <i class="fa-solid fa-rocket"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/zuck30/whatsQr" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>AnonySMS Web</h3>
                             <span class="tech">Flask, Twilio API</span>
@@ -251,11 +338,15 @@
                             <li>Flask-based web app for sending anonymous SMS</li>
                             <li>Real-time validation with Twilio API integration</li>
                             <li>Send anonymous SMS messages on web</li>
-                            <li><a href="https://github.com/zuck30/anonysmsweb" target="_blank">GitHub Repository</a></li>
+                            <li class="project-links">
+                                <a href="https://github.com/zuck30/anonysmsweb" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>Aurafy: Music Personality Analyzer</h3>
                             <span class="tech">React, FastAPI, Spotify API</span>
@@ -264,10 +355,15 @@
                             <li>Analyzes Spotify listening habits for personality profiles</li>
                             <li>Secure OAuth 2.0 authentication with Spotify</li>
                             <li>Interactive data dashboards with personalized insights</li>
+                              <li class="project-links">
+                                <a href="https://github.com/zuck30/aurafy" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="project-item glass-item">
+                    <div class="project-item glass-item" data-tilt>
                         <div class="project-header">
                             <h3>Chuodeep: Student AI Chat Assistant</h3>
                             <span class="tech">Python, FastAPI, Groq API, React</span>
@@ -276,6 +372,11 @@
                             <li>ML-powered chat tool for academic information retrieval</li>
                             <li>Vector search implementation for efficient query processing</li>
                             <li>Reduced query resolution time compared to manual search</li>
+                              <li class="project-links">
+                                <a href="https://github.com/zuck30/chuodeep" target="_blank" class="link-btn github">
+                                    <i class="fa-brands fa-github"></i> Github
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -283,16 +384,16 @@
                 <section class="section">
                     <h2 class="section-title">CERTIFICATIONS</h2>
                     <ul class="cert-list glass-list">
-                        <li><strong>Full-Stack Development:</strong> Self-Taught</li>
-                        <li><strong>Machine Learning:</strong> Self Taught Online Courses</li>
-                        <li><strong>API Development & Integration:</strong> Self-Taught</li>
+                        <li><i class="fa-solid fa-certificate"></i> <strong>Full-Stack Development:</strong> Self-Taught</li>
+                        <li><i class="fa-solid fa-certificate"></i> <strong>Machine Learning:</strong> Self Taught Online Courses</li>
+                        <li><i class="fa-solid fa-certificate"></i> <strong>API Development & Integration:</strong> Self-Taught</li>
                     </ul>
                 </section>
 
                 <section class="section spotify-section">
-                    <h2 class="section-title">🎧 RECENTLY PLAYED ON SPOTIFY</h2>
+                    <h2 class="section-title"><i class="fa-brands fa-spotify"></i> RECENTLY PLAYED ON SPOTIFY</h2>
                     <details open class="spotify-details">
-                        <summary class="spotify-summary glass-item">▶ Click to see what I'm listening to</summary>
+                        <summary class="spotify-summary glass-item">Click to see what I'm listening to</summary>
                         <div class="spotify-widget glass-item">
                             <img src="https://spotify-recently-played-readme.vercel.app/api?user=31mpawo7brnhlosrwln3rrpaocqy&count=5" 
                                  alt="Recently Played Spotify Tracks" 
@@ -302,7 +403,7 @@
                 </section>
 
                 <section class="section quote-section">
-                    <h2 class="section-title">💭 QUOTE OF THE DAY</h2>
+                    <h2 class="section-title"><i class="fa-solid fa-quote-left"></i> QUOTE OF THE DAY</h2>
                     <div class="quote-card glass-item">
                         <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" 
                              alt="Inspirational Quote" 
@@ -323,12 +424,14 @@
                 </div>
                 
                 <div class="footer-stats">
-                    <p class="visitor-count">👀 Viewed <span id="visitorCount">many</span> times</p>
-                    <p>Open-source contributor on GitHub.</p>
+                    <p class="visitor-count"><i class="fa-solid fa-eye"></i> Viewed <span id="visitorCount">many</span> times</p>
+                    <p><i class="fa-brands fa-github"></i> Open-source contributor on GitHub.</p>
                 </div>
             </div>
         </footer>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
