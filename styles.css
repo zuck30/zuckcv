@@ -773,3 +773,179 @@ body {
         border-bottom-color: #0066cc;
     }
 }
+/* Visitor Badge Top */
+.visitor-badge-top {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 100;
+    background: var(--glass-bg-4);
+    padding: 5px 15px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    font-size: 0.9rem;
+}
+
+/* GitHub Stats Grid */
+.github-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.stats-card {
+    transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: scale(1.02);
+}
+
+/* Spotify Section */
+.spotify-details {
+    margin-bottom: 20px;
+}
+
+.spotify-summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #0066cc;
+}
+
+.spotify-summary::-webkit-details-marker {
+    display: none;
+}
+
+.spotify-summary:hover {
+    background: var(--glass-bg-4);
+}
+
+.spotify-widget {
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.spotify-widget:hover {
+    transform: translateY(-5px);
+}
+
+/* Quote Section */
+.quote-card {
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--glass-shadow-hover);
+}
+
+/* Footer Updates */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.coffee-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.coffee-button {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.coffee-button:hover {
+    transform: scale(1.05);
+}
+
+.coffee-quote {
+    font-size: 0.85rem;
+    color: #86868b;
+    font-style: italic;
+    background: var(--glass-bg-2);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.footer-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.visitor-count {
+    font-size: 0.9rem;
+    color: #0066cc;
+    background: var(--glass-bg-2);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Responsive updates */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .coffee-section {
+        align-items: center;
+    }
+    
+    .footer-stats {
+        align-items: center;
+    }
+    
+    .visitor-badge-top {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.coffee-button {
+    animation: pulse 2s infinite;
+}
+
+.coffee-button:hover {
+    animation: none;
+}
+
+/* Spotify details animation */
+.spotify-details[open] .spotify-widget {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
