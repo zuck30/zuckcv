@@ -31,20 +31,6 @@
 
 <br>
 
-## 📋 CV Sections
-
-| Section | Description |
-|---------|-------------|
-| **Profile Header** | Name, title, contact information with glass effect |
-| **Education** | Academic background with glass cards |
-| **Technical Skills** | Categorized skills with pill-style chips |
-| **Achievements** | Key accomplishments with icon list |
-| **Work Experience** | Internship and freelance roles |
-| **Featured Projects** | 4 key projects with tech stack |
-| **Certifications** | Professional certifications |
-
-<br>
-
 ## 🛠️ Built With
 
 <!-- ### Core Technologies -->
